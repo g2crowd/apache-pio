@@ -42,4 +42,8 @@ RUN tar zxvfC hbase-1.2.5-bin.tar.gz $PIO_ROOT/vendors
 
 COPY hbase-site.xml $PIO_ROOT/vendors/hbase-1.2.5/conf/hbase-site.xml
 
-ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64/jre
+ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64
+
+COPY pio-env.sh $PIO_ROOT/conf/pio-env.sh
+
+RUN apt-get update && apt-get install -y git
