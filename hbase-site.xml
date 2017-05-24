@@ -1,0 +1,10 @@
+<configuration>
+  <property>
+    <name>hbase.rootdir</name>
+    <value>file:///PredictionIO-compiled/vendors/hbase-1.2.5/data</value>
+  </property>
+  <property>
+    <name>hbase.zookeeper.property.dataDir</name>
+    <value>/PredictionIO-compiled/vendors/hbase-1.2.5/zookeeper</value>
+  </property>
+</configuration>
