@@ -47,3 +47,5 @@ ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64
 COPY pio-env.sh $PIO_ROOT/conf/pio-env.sh
 
 RUN apt-get update && apt-get install -y git
+
+ENV PIO_HOME $PIO_ROOT
